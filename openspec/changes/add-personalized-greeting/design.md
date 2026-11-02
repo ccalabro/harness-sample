@@ -32,7 +32,7 @@ The repository currently contains only the harness setup and OpenSpec change. Th
 | Greet a named person; preserve capitalization and internal spaces | Unit: `Ada Lovelace` returns `Hello, Ada Lovelace!` | T001 | `uv run --with pytest pytest -q tests/test_greeting.py` |
 | Trim surrounding whitespace | Unit: padded name returns normalized greeting | T001 | `uv run --with pytest pytest -q tests/test_greeting.py` |
 | Reject empty and whitespace-only names with exact error | Unit: empty and spaces/tabs raise exact `ValueError` | T001 | `uv run --with pytest pytest -q tests/test_greeting.py` |
-| Full regression suite | Full suite after implementation | T001 | `uv run --with pytest pytest -q` |
+| Full regression suite | Full suite after implementation | T002 | `uv run --with pytest pytest -q` |
 
 Inspected paths: `.sdd/POLICY.md`, approved proposal and delta spec, generated conductor and test-strategy skill, and repository file inventory. Environment evidence: `command -v uv` resolved to `/Users/cristiancalabro/.local/bin/uv`; Python will be invoked by `uv`. Pytest is fetched ephemerally for checks. Planned commands are not observed results.
 
