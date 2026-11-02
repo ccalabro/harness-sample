@@ -2,4 +2,5 @@
 
 ## 1. Personalized greeting
 
-- [ ] T001 Add tests for named, whitespace-trimmed, empty, and whitespace-only inputs; run them to confirm failure, implement `greet_person(name: str) -> str` in `greeting.py`, then verify the focused and full suites with `uv run --with pytest pytest -q`.
+- [ ] T001 Write unit tests in `tests/test_greeting.py` for `Ada Lovelace`, surrounding whitespace, empty input, and spaces/tabs; run `uv run --with pytest pytest -q tests/test_greeting.py` and confirm failure because `greeting.py` is not implemented, then commit as `Write personalized greeting tests`.
+- [ ] T002 Implement `greet_person(name: str) -> str` in `greeting.py` using `strip()` and the specified `ValueError`; run `uv run --with pytest pytest -q` and confirm all tests pass, then commit as `Implement personalized greeting`.

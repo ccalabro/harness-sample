@@ -25,7 +25,7 @@ The repository currently contains only the harness setup and OpenSpec change. Th
 
 ### `sdd-test-strategy`
 
-**Applies:** Always. Invoked by reading the generated strategy instructions. Acceptance criteria map to deterministic unit tests:
+**Applies:** Always. Invoked by reading and applying `.agents/skills/sdd-test-strategy/SKILL.md`. Analysis output: all four scenario assertions are deterministic unit tests; no external service or fixture is required; the negative cases are the empty string and a string containing spaces and tabs. A full-suite invocation follows implementation. This catches output formatting, whitespace normalization, and blank rejection regressions.
 
 | Criterion | Level and scenario | Task | Planned command |
 |---|---|---|---|
@@ -34,15 +34,15 @@ The repository currently contains only the harness setup and OpenSpec change. Th
 | Reject empty and whitespace-only names with exact error | Unit: empty and spaces/tabs raise exact `ValueError` | T001 | `uv run --with pytest pytest -q tests/test_greeting.py` |
 | Full regression suite | Full suite after implementation | T001 | `uv run --with pytest pytest -q` |
 
-Inspected paths: `.sdd/POLICY.md`, approved proposal and delta spec, generated conductor and test-strategy skill, and repository file inventory. Assumptions: Python and `uv` are available in the demo environment; pytest is fetched ephemerally for checks. Planned commands are not observed results.
+Inspected paths: `.sdd/POLICY.md`, approved proposal and delta spec, generated conductor and test-strategy skill, and repository file inventory. Environment evidence: `command -v uv` resolved to `/Users/cristiancalabro/.local/bin/uv`; Python will be invoked by `uv`. Pytest is fetched ephemerally for checks. Planned commands are not observed results.
 
 ### `sdd-threat-model`
 
-**Applies:** Yes, because the function accepts caller-provided text. The only data flow is a name string into formatting; there is no filesystem, process, network, credential, or persistent-data access. Threat: whitespace or unusual text could produce an empty or malformed greeting. Mitigation: trim surrounding whitespace and reject blank results. Negative verification is included in T001 with empty, spaces, and tabs. Residual risk: arbitrary nonblank text is preserved as the approved contract requires.
+**Applies:** Yes, because the function accepts caller-provided text. Invoked by reading and applying `.agents/skills/sdd-threat-model/SKILL.md`. Analysis output: asset is the returned greeting; actor is any caller; entry point is the `name` argument; flow is argument → trim/blank validation → formatted return. No privilege, filesystem, process, network, credential, or persistent-data boundary exists. Threat: whitespace-only input could yield an empty greeting; mitigation is trim then reject, with exact-message negative tests in T001. Threat: unusual nonblank text could change presentation; the approved behavior preserves internal content, so this is intentional. Residual risk: no escaping or display policy exists because the function returns plain text and has no rendering sink.
 
 ### `sdd-api-contract-review`
 
-**Applies:** Yes, because `greet_person(name: str) -> str` is a public Python function contract. Compatibility: this is a new function with no existing consumers. Error semantics are `ValueError("name must not be blank")`; contract cases are covered by T001 unit tests for valid, normalized, and invalid inputs. No versioning or migration is needed for this demo.
+**Applies:** Yes, because `greet_person(name: str) -> str` is a public Python function contract. Invoked by reading and applying `.agents/skills/sdd-api-contract-review/SKILL.md`. Analysis output: this is a newly added producer with no existing consumers, so there is no compatibility break or version migration. Success returns a string in the specified format after edge trimming; failure raises `ValueError("name must not be blank")`. T001 and T002 cover the contract with named, whitespace-normalized, empty, and whitespace-only inputs. There are no serialization, ordering, authentication, retry, or idempotency concerns for this local function.
 
 ### `sdd-database-migration-review`
 
