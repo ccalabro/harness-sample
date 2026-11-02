@@ -1,0 +1,288 @@
+schema_version: 1
+files:
+  .sdd/POLICY.md: a1f59f35dfc3c4765c55df1830b1f4e4183077c4c8868d1349250478a5d94d10
+  .sdd/scripts/sdd-doctor.py: 3da4a77f46cf759932ea409a2284551fe0428911c6fe82fd6476b1cc07a55114
+  .sdd/scripts/sdd-workflow.py: 9145b14a09c05bc61688ed1e695dea4a9564dd4e5f9dfa113cb2d88a4819ce10
+  .sdd/scripts/sdd_workflow_runtime.py: 3c463dd1d6e01d8c467f426b178d253ac0ee0f8cf479c9ca09f2cf05b0e1c5b8
+  .sdd/runtime-config.json: 53859e745c143dcc7b160da595ae0bdf494083b1bedc766bc15e539ced3347b0
+  .agents/skills/sdd-run/SKILL.md: 7932dc9ac9f8b4d541769f7b1e3fbc93bd7942fc64b6e0dde8d9dde5212301bb
+  .agents/skills/sdd-test-strategy/SKILL.md: 6ddebc8e70b57e54f00762b50351bfcc5f975ca8bddcd72e241b334ae0569d1e
+  .agents/skills/sdd-threat-model/SKILL.md: 7f01d4d2e5833856f61ad9f44c8aef2bbc870b2da297146b712645b13212c263
+  .agents/skills/sdd-api-contract-review/SKILL.md: 11e3b807f211cd95f24bf201bd7a728ea96268fade46e706b1efd6945b0c83d8
+  .agents/skills/sdd-database-migration-review/SKILL.md: 8b041841f40921067f99703e779206baa29a852225b53cb7c47532bd6a6f4104
+  .agents/skills/sdd-accessibility-review/SKILL.md: 8bb862f4e1a5937d651f9b3d9b87d784118357b6ed8f9aa9c406ef4f2f583b62
+  .agents/skills/sdd-observability-review/SKILL.md: 24237fb7cae7d816500690e9351f3886ee5710c42edb7fa9a3e5b7159afe9ac4
+  .agents/skills/sdd-release-readiness/SKILL.md: a87527b0c655a9bb40efe6279e3e7d141894ed36f1378b88205270b93d43fa6a
+  .agents/skills/sdd-commit/SKILL.md: da6c1a994cf282a4173c471c40fcddb91136bb2c226f5501cf69538259f3d882
+  .agents/skills/sdd-github-pr/SKILL.md: 4ce6134e9def54e00df51b431ee2a69126dbfe7a46c0faec219badbb04dbfeb9
+  .agents/skills/sdd-gitlab-mr/SKILL.md: 315fad6fe47a782a72513d140c5cad99f6bc239586d416a5e74a42693b460114
+  .agents/skills/sdd-bitbucket-pr/SKILL.md: f2f2e83d5e7cd4482912a1ed27c7e8de56802a7feda30f12799ddfb9ae43685d
+  .sdd/roles/explorer.md: e2097e03ddd9bc797d5ff64acf4960bd9a0ad4293f6ae31b57ae55c86fefebd8
+  .sdd/roles/brainstormer.md: 50f0fb24608eaa1cdae21c11a462e234490c022435eda2f3986f6fb2f6356da8
+  .sdd/roles/specifier.md: a32517162c37e05300f323b88135edd835568c21aa092d03442293eba9dce5ca
+  .sdd/roles/planner.md: 660b6984f8f74a8ac88f17a7f6476ce64ccc63f27bffbb817f95f82fe7997905
+  .sdd/roles/plan-reviewer.md: 197d2eeee4e1a35464ae2f7314cc71cffa560c8deef864abdbb59d4447fcf6da
+  .sdd/roles/implementer.md: d76cc67a0d78e9b6b08c64fa68d2cde3e0497512ff5c1369b2ce9d1a856b12e2
+  .sdd/roles/spec-reviewer.md: 0d7bf1ba373a8e7b9f35f0b06b44f61166b3c633576415a613dbbc8ba782f48e
+  .sdd/roles/code-reviewer.md: 54027d63de95286d5a767109faea7f0aab832c1dc7dd46bddb950ea597b57c12
+  .sdd/roles/security-reviewer.md: bcb4feb15d2bca6b61c077027d3931ac2d414d453306981779cc6a96e0f35f6b
+  .sdd/roles/final-reviewer.md: 49f4692bab1a7817da86f4a559a5169af2f9dca09a2898d1b64cb8bfcfeaca32
+  .sdd/roles/pr-reviewer.md: 030b7e9eff68969b58f753d8827549eb2df87cc8509093a45c241b268c6542fc
+  .sdd/harnesses/generic.md: 0533a16854bc406278f1f998d03a6beb8d842805865edde129de4150859d9208
+  .claude/skills/sdd-run/SKILL.md: 5bfc7be5b2acec3a472e05eb8c9c91ec748a2b48d4bf8af8335c69e906d611e0
+  .claude/skills/sdd-test-strategy/SKILL.md: acb6eafe392dfd2e07ae940f8b02fe608755065642deb9868c69ec6188daa20e
+  .claude/skills/sdd-threat-model/SKILL.md: fef3812e2bb14ef1611d6d95b55c3ee9d4a9a79f302363b6dbb31ee60adc353a
+  .claude/skills/sdd-api-contract-review/SKILL.md: b39a6830bdd5fd5d14e788e8fbe1b7d4966807a131ba53c5d6caa4c763811b31
+  .claude/skills/sdd-database-migration-review/SKILL.md: 443f9af0c8dc4318c2f3860f0cb4c3be8196435a65cd2539e32100e7a0edc814
+  .claude/skills/sdd-accessibility-review/SKILL.md: f12a6abc05f4539331f0d539fa65ba6e367eccc76cf2a876ab54883cc8f91f1e
+  .claude/skills/sdd-observability-review/SKILL.md: a07a89a52457358984b603185ce4674c833b16552135851f56d1191fec325492
+  .claude/skills/sdd-release-readiness/SKILL.md: 2ad18c63999c9daac13b22b0d8247e13fc6438e0b53190eb2af699675b915618
+  .claude/skills/sdd-commit/SKILL.md: c02f10223c61f6710feddec839da129d6b9b72f3aa63c2a2f811f1dd5fb8fc91
+  .claude/skills/sdd-github-pr/SKILL.md: ebe213d1c6d54f13c34cb72c26902a6d1c4ff2d7558aab33bedb40785194256a
+  .claude/skills/sdd-gitlab-mr/SKILL.md: e4f650313c08b5a7643fd4f0afa544b912469206394be1232c00e7b3ec08b1d7
+  .claude/skills/sdd-bitbucket-pr/SKILL.md: 6d67050dd4e450cfd7f62529d607cda0992544fb3601f7d3b75f5d0b32b009dd
+  .sdd/harnesses/claude.md: a24a497d5e1854817db37d628687e884bb2e099fa7a4a3e3724da7cac3284818
+  .claude/agents/sdd-explorer.md: a2e4a18c19ce2be10f9d514eef1f0f537f1856f28b30ccfbf72721ab13ef39a2
+  .claude/agents/sdd-brainstormer.md: 800681f1d04b369ee71278515c41288c3a798e35a7e38683e5a6986caa6c9b6a
+  .claude/agents/sdd-specifier.md: 2c8c4f64c2279b4fd88c4bf7e365439442e14853d14bbb7b9363fb7212335fef
+  .claude/agents/sdd-planner.md: f839b8ada786611019055d324fc9a8fc0f895dbbfddb88a25d1c09ed21b86807
+  .claude/agents/sdd-plan-reviewer.md: 773cfda985704027d75e52377931c6159939cb00c03b01971ec680d685392ea8
+  .claude/agents/sdd-implementer.md: 07ca42b90b9a41f7f033c5b2d4a2e43011b32bb6da452645bed0bc022be70458
+  .claude/agents/sdd-spec-reviewer.md: 99603f345f896a2d36643c6ac5d54dfa5d6ca4cb28a23f945dd7cbf4ad9086f0
+  .claude/agents/sdd-code-reviewer.md: ea3341320b12c1b7ed6100a497cdc19180b074ac73460110241add0d6ab1ea13
+  .claude/agents/sdd-security-reviewer.md: 8e4388642ee7f85bf7eb60d709e9d162afc4ccec876244acf3c971420526ddc5
+  .claude/agents/sdd-final-reviewer.md: 94d77aa8c8ebafa38b354ceedd7d374c50aa7d18de0a2162e909ce94cf54822d
+  .claude/agents/sdd-pr-reviewer.md: f1ea0b1735b6f2969fa4cc605dc7e4d4bc305bf3d43309ee05a07bc4b5f4b36c
+  .sdd/harnesses/codex.md: 7738e069dd83f3420f033dc1ab69428e71e9622bafcbd33983a199fc074f96eb
+  .codex/agents/sdd-explorer.toml: 07bfc69ab3857dd146ce116f9c89112235fe95fc7a7394b3e4cda37236390f42
+  .codex/agents/sdd-brainstormer.toml: b0256eb543fba2cef2b79197a45c3869d4edd233faf4e4cbf9d34e0dbf2ee049
+  .codex/agents/sdd-specifier.toml: d3ffc805dc9c1c622a1efa14ad5694d68e86d2100f4b9bd0ae0f4e6f94adad60
+  .codex/agents/sdd-planner.toml: 54bc83846b24cae2e2ed97afad946798e76b265d8313c740df3d2d26af6e38ed
+  .codex/agents/sdd-plan-reviewer.toml: f3f1161272eadb31011ca12fbc10f09cf6d4abc940253c834112f8343a36fac0
+  .codex/agents/sdd-implementer.toml: 583e005d384eded05532bef43f251c68979ae806bb72938010de6d5c539e3009
+  .codex/agents/sdd-spec-reviewer.toml: 863aa992c0063091d51bef477d9dbd83f1dca6994536b913df7a44c738716f21
+  .codex/agents/sdd-code-reviewer.toml: cfcefb728274fdb30f26c259af29ec0f88bf0b54781143e9f228537d9855f55a
+  .codex/agents/sdd-security-reviewer.toml: 2f8f208d78641d048be245536323cc0d0c475171ee9369f845b70bb3311e09b1
+  .codex/agents/sdd-final-reviewer.toml: 665eda40115c641ff8aff1da92648977fe1ef7f52b76b4697b2c60a705dae1a1
+  .codex/agents/sdd-pr-reviewer.toml: 23cc46235dc19a3bc63a2e13d3bf7ef02433b8b78837be99831feb3b0d28569a
+  .gemini/skills/sdd-run/SKILL.md: 5bfc7be5b2acec3a472e05eb8c9c91ec748a2b48d4bf8af8335c69e906d611e0
+  .gemini/skills/sdd-test-strategy/SKILL.md: acb6eafe392dfd2e07ae940f8b02fe608755065642deb9868c69ec6188daa20e
+  .gemini/skills/sdd-threat-model/SKILL.md: fef3812e2bb14ef1611d6d95b55c3ee9d4a9a79f302363b6dbb31ee60adc353a
+  .gemini/skills/sdd-api-contract-review/SKILL.md: b39a6830bdd5fd5d14e788e8fbe1b7d4966807a131ba53c5d6caa4c763811b31
+  .gemini/skills/sdd-database-migration-review/SKILL.md: 443f9af0c8dc4318c2f3860f0cb4c3be8196435a65cd2539e32100e7a0edc814
+  .gemini/skills/sdd-accessibility-review/SKILL.md: f12a6abc05f4539331f0d539fa65ba6e367eccc76cf2a876ab54883cc8f91f1e
+  .gemini/skills/sdd-observability-review/SKILL.md: a07a89a52457358984b603185ce4674c833b16552135851f56d1191fec325492
+  .gemini/skills/sdd-release-readiness/SKILL.md: 2ad18c63999c9daac13b22b0d8247e13fc6438e0b53190eb2af699675b915618
+  .gemini/skills/sdd-commit/SKILL.md: c02f10223c61f6710feddec839da129d6b9b72f3aa63c2a2f811f1dd5fb8fc91
+  .gemini/skills/sdd-github-pr/SKILL.md: ebe213d1c6d54f13c34cb72c26902a6d1c4ff2d7558aab33bedb40785194256a
+  .gemini/skills/sdd-gitlab-mr/SKILL.md: e4f650313c08b5a7643fd4f0afa544b912469206394be1232c00e7b3ec08b1d7
+  .gemini/skills/sdd-bitbucket-pr/SKILL.md: 6d67050dd4e450cfd7f62529d607cda0992544fb3601f7d3b75f5d0b32b009dd
+  .sdd/harnesses/gemini.md: 1c1cb2f2204567e0b26a0451109c07bcbdb8fbd5879af2f3e23a1f6fda5f046a
+  .gemini/agents/sdd-explorer.md: 1c3ea85c8ac1e1b9ce6878f58a0ed574e5ec4f2b6c2e1900bf771e12770d5978
+  .gemini/agents/sdd-brainstormer.md: 0a73f415e3ce4d0948b5e2f9a5a354619cc117e0805d517747ecdfa50d4c8b35
+  .gemini/agents/sdd-specifier.md: e6e9ecdbe82effab7c09ced76fce1fac25741ba12b7e6403e5031fa9e02677ad
+  .gemini/agents/sdd-planner.md: ecad3a520250ac66536c4bf7ffde7c07998663d1b26d2b8e8f6cc67b68f31c65
+  .gemini/agents/sdd-plan-reviewer.md: 44c0c4beb3d59a441940cff042bccd67a92836f23c0b1c5ccbbd8ec964d8790d
+  .gemini/agents/sdd-implementer.md: 06dc96e9b29e96fb8521fa5628a7b934d2e8080b02658390cf9f1ba35c3b8cff
+  .gemini/agents/sdd-spec-reviewer.md: d98833a4bbeaefcf62bedc751e561645086c49371b486662da6a23394f8d6c13
+  .gemini/agents/sdd-code-reviewer.md: df0c6d738f2074666bfde291a07d2fab4fb1bb01df871f21738dc420ce14a359
+  .gemini/agents/sdd-security-reviewer.md: 89f72207c5e8c665030362465d45358659d01294be84c5d13a0352722da029b9
+  .gemini/agents/sdd-final-reviewer.md: 0bf35ecf275cc4075b0ebff0f049814f256f3f8d092feb6ab9e6730e19b35c25
+  .gemini/agents/sdd-pr-reviewer.md: b64f2955aad353afbe3c98d5964687044746b120d98cdf1c91b0110124df9f89
+  .grok/skills/sdd-run/SKILL.md: 5bfc7be5b2acec3a472e05eb8c9c91ec748a2b48d4bf8af8335c69e906d611e0
+  .grok/skills/sdd-test-strategy/SKILL.md: acb6eafe392dfd2e07ae940f8b02fe608755065642deb9868c69ec6188daa20e
+  .grok/skills/sdd-threat-model/SKILL.md: fef3812e2bb14ef1611d6d95b55c3ee9d4a9a79f302363b6dbb31ee60adc353a
+  .grok/skills/sdd-api-contract-review/SKILL.md: b39a6830bdd5fd5d14e788e8fbe1b7d4966807a131ba53c5d6caa4c763811b31
+  .grok/skills/sdd-database-migration-review/SKILL.md: 443f9af0c8dc4318c2f3860f0cb4c3be8196435a65cd2539e32100e7a0edc814
+  .grok/skills/sdd-accessibility-review/SKILL.md: f12a6abc05f4539331f0d539fa65ba6e367eccc76cf2a876ab54883cc8f91f1e
+  .grok/skills/sdd-observability-review/SKILL.md: a07a89a52457358984b603185ce4674c833b16552135851f56d1191fec325492
+  .grok/skills/sdd-release-readiness/SKILL.md: 2ad18c63999c9daac13b22b0d8247e13fc6438e0b53190eb2af699675b915618
+  .grok/skills/sdd-commit/SKILL.md: c02f10223c61f6710feddec839da129d6b9b72f3aa63c2a2f811f1dd5fb8fc91
+  .grok/skills/sdd-github-pr/SKILL.md: ebe213d1c6d54f13c34cb72c26902a6d1c4ff2d7558aab33bedb40785194256a
+  .grok/skills/sdd-gitlab-mr/SKILL.md: e4f650313c08b5a7643fd4f0afa544b912469206394be1232c00e7b3ec08b1d7
+  .grok/skills/sdd-bitbucket-pr/SKILL.md: 6d67050dd4e450cfd7f62529d607cda0992544fb3601f7d3b75f5d0b32b009dd
+  .sdd/harnesses/grok.md: 9a20863be2bda869b57a2d8af143815890aef40989b0992208ea18d6e26cb86c
+  .github/skills/sdd-run/SKILL.md: 5bfc7be5b2acec3a472e05eb8c9c91ec748a2b48d4bf8af8335c69e906d611e0
+  .github/skills/sdd-test-strategy/SKILL.md: acb6eafe392dfd2e07ae940f8b02fe608755065642deb9868c69ec6188daa20e
+  .github/skills/sdd-threat-model/SKILL.md: fef3812e2bb14ef1611d6d95b55c3ee9d4a9a79f302363b6dbb31ee60adc353a
+  .github/skills/sdd-api-contract-review/SKILL.md: b39a6830bdd5fd5d14e788e8fbe1b7d4966807a131ba53c5d6caa4c763811b31
+  .github/skills/sdd-database-migration-review/SKILL.md: 443f9af0c8dc4318c2f3860f0cb4c3be8196435a65cd2539e32100e7a0edc814
+  .github/skills/sdd-accessibility-review/SKILL.md: f12a6abc05f4539331f0d539fa65ba6e367eccc76cf2a876ab54883cc8f91f1e
+  .github/skills/sdd-observability-review/SKILL.md: a07a89a52457358984b603185ce4674c833b16552135851f56d1191fec325492
+  .github/skills/sdd-release-readiness/SKILL.md: 2ad18c63999c9daac13b22b0d8247e13fc6438e0b53190eb2af699675b915618
+  .github/skills/sdd-commit/SKILL.md: c02f10223c61f6710feddec839da129d6b9b72f3aa63c2a2f811f1dd5fb8fc91
+  .github/skills/sdd-github-pr/SKILL.md: ebe213d1c6d54f13c34cb72c26902a6d1c4ff2d7558aab33bedb40785194256a
+  .github/skills/sdd-gitlab-mr/SKILL.md: e4f650313c08b5a7643fd4f0afa544b912469206394be1232c00e7b3ec08b1d7
+  .github/skills/sdd-bitbucket-pr/SKILL.md: 6d67050dd4e450cfd7f62529d607cda0992544fb3601f7d3b75f5d0b32b009dd
+  .sdd/harnesses/copilot.md: 8d88504651c342037e3e96a7a83b3973092e31b5545e2e8d551fd27ea862403c
+  .github/agents/sdd-explorer.agent.md: d3ce5e112bc364a7b107836b985b85c85fc297a1e8e6882af1f48bbe1c6eb682
+  .github/agents/sdd-brainstormer.agent.md: 444875d1447f6de099b5bb50d656b918686f388a1584b136bd3581788cfcde14
+  .github/agents/sdd-specifier.agent.md: 48a5255b8c1a10c536449aa8d59ced55990506636e93e1f9f17c69828a5ef5f4
+  .github/agents/sdd-planner.agent.md: e5e5f593cfceb387bf51fff51cae2fa36f537a192dd78d27175e53176ee7085c
+  .github/agents/sdd-plan-reviewer.agent.md: 01d66a658157189ccc4dc1e22619af7141ba0b72c0c8daf03e8184c80e4f4b14
+  .github/agents/sdd-implementer.agent.md: df9a2ebd55bdf3a39cb6511006303e1b063cbbb41ee8f580e3bea726bf31fb75
+  .github/agents/sdd-spec-reviewer.agent.md: 05ba0a8924682e669cacb05eace639699c090805e8985b65288242a1a9886e83
+  .github/agents/sdd-code-reviewer.agent.md: 0fe72d46927f43aea0d91f35b6aca008e002e071eed1fe06e19f3dca44a4ed80
+  .github/agents/sdd-security-reviewer.agent.md: 8368b10409e64459937c6bbcd75704cad4373331891d95cc07c4c11fffd1206e
+  .github/agents/sdd-final-reviewer.agent.md: 446357fb29bb0c939ed49f3a5e5ff84921c5033b46b6e1c9ba89a7680d23cdca
+  .github/agents/sdd-pr-reviewer.agent.md: 6282684b602958677635bba650e0deac451a55d37d7a3e9cf2f45b2cf5439e6d
+  .opencode/skills/sdd-run/SKILL.md: 5bfc7be5b2acec3a472e05eb8c9c91ec748a2b48d4bf8af8335c69e906d611e0
+  .opencode/skills/sdd-test-strategy/SKILL.md: acb6eafe392dfd2e07ae940f8b02fe608755065642deb9868c69ec6188daa20e
+  .opencode/skills/sdd-threat-model/SKILL.md: fef3812e2bb14ef1611d6d95b55c3ee9d4a9a79f302363b6dbb31ee60adc353a
+  .opencode/skills/sdd-api-contract-review/SKILL.md: b39a6830bdd5fd5d14e788e8fbe1b7d4966807a131ba53c5d6caa4c763811b31
+  .opencode/skills/sdd-database-migration-review/SKILL.md: 443f9af0c8dc4318c2f3860f0cb4c3be8196435a65cd2539e32100e7a0edc814
+  .opencode/skills/sdd-accessibility-review/SKILL.md: f12a6abc05f4539331f0d539fa65ba6e367eccc76cf2a876ab54883cc8f91f1e
+  .opencode/skills/sdd-observability-review/SKILL.md: a07a89a52457358984b603185ce4674c833b16552135851f56d1191fec325492
+  .opencode/skills/sdd-release-readiness/SKILL.md: 2ad18c63999c9daac13b22b0d8247e13fc6438e0b53190eb2af699675b915618
+  .opencode/skills/sdd-commit/SKILL.md: c02f10223c61f6710feddec839da129d6b9b72f3aa63c2a2f811f1dd5fb8fc91
+  .opencode/skills/sdd-github-pr/SKILL.md: ebe213d1c6d54f13c34cb72c26902a6d1c4ff2d7558aab33bedb40785194256a
+  .opencode/skills/sdd-gitlab-mr/SKILL.md: e4f650313c08b5a7643fd4f0afa544b912469206394be1232c00e7b3ec08b1d7
+  .opencode/skills/sdd-bitbucket-pr/SKILL.md: 6d67050dd4e450cfd7f62529d607cda0992544fb3601f7d3b75f5d0b32b009dd
+  .sdd/harnesses/opencode.md: 3ca069e18af5d812a2a53700d736ba39e129de8a41f89a3c8dd4d3ccbe1a4638
+  .opencode/agents/sdd-explorer.md: e005eb2ae4f59f6c2256b408154dbf78c573e3e0d3851df5fa708c180de55c4b
+  .opencode/agents/sdd-brainstormer.md: df4427590e0b6fa02b212cd6cec002d27b528fac85c50604de4ac512cd8f4b33
+  .opencode/agents/sdd-specifier.md: 69b7ae7b393e2f7322322248a95d02c9cd64968b0337b30978781e8b4b001d43
+  .opencode/agents/sdd-planner.md: 7176aa1be2c7e2a4f7393cbc2fff1fa39f2569e4212f61dd28780f5ab6b63507
+  .opencode/agents/sdd-plan-reviewer.md: 04f35b39feb7e26e3cd6791e927210fcca58c5a9cbaeaf4e032eb992f5e88529
+  .opencode/agents/sdd-implementer.md: a965e4cc6dc1d560c07fa3797ae29d80d74e0b4f87a14e8e2a488bceac6312e7
+  .opencode/agents/sdd-spec-reviewer.md: d1f7b773de7cbcd0f66181bce9ffeb0520a57113a229c092f5ba6f8dbea4d3f8
+  .opencode/agents/sdd-code-reviewer.md: 640755ad29e2dae582595fbfe48a62558c7757b73eadb4ff7c8ea141f14b535c
+  .opencode/agents/sdd-security-reviewer.md: 8425fd5ed3a622678c1e45823a244bcc595fdad0ccf128548b0ee054006c1f2e
+  .opencode/agents/sdd-final-reviewer.md: 147000e0d1e710d2a29dfa87350757d0879de14331257525efe0c908f4cab97a
+  .opencode/agents/sdd-pr-reviewer.md: ab1414c62e179a3acae57761870ae2556be65f02585cd0d624508448890ef6d5
+  .agents/skills/.openspec-target: 38700dfad5711976e2f7aeab31013f04aed8c83118a1ef892f6d23bdfe944602
+  .agents/skills/openspec-apply-change/SKILL.md: 8f5918f08585e791e65bfaa9c5bbf59c19a02d7c20922ea9ddcf686867a12ccf
+  .agents/skills/openspec-explore/SKILL.md: fd8c1a091cdc065f2afe5102a16a31cc808a13ae87927127ed0f331559168001
+  .agents/skills/openspec-verify-change/SKILL.md: 25d61eecd23e60b1a51949427eefd52bdff2ab0bee5486245e407874767b8a55
+  .agents/skills/openspec-new-change/SKILL.md: 52382f0e22c21f718bec40bafa0896e8a92ae3cdf7a9740349c65c74e3f2da8f
+  .agents/skills/openspec-update-change/SKILL.md: 542b3baba71800fcef45223b0eb9fe3936dd42b0bc60ee40c4412e1270d1843d
+  .agents/skills/openspec-archive-change/SKILL.md: 974cc69699f9f422a225c7edfde06631bdcb9ec5fba0fadcd1ea8c1dc9d55f47
+  .agents/skills/openspec-onboard/SKILL.md: 53fdfd6413d96e82e9bd3ac1b93a2d7d3dd67270afc9e8435f60fbcb9c40fa6a
+  .agents/skills/openspec-propose/SKILL.md: f02e83dedfa563edca349043ebe700e14a613a480759c4887de4967b85409a17
+  .agents/skills/openspec-bulk-archive-change/SKILL.md: a7ca5de5fdd259c12e6e3a1f889182bc666be5c8e3d4b77c3baa3d88c6abddbb
+  .agents/skills/openspec-continue-change/SKILL.md: d79e7e541b21cd43ee30a249e71f69c5858f709f3c2f75519f8ef4b6d5ef2c74
+  .agents/skills/openspec-sync-specs/SKILL.md: b301c28c5c6c00f4e3329b09677e415d6bf5ebbbf450fb59fe1c7cd19caf0c80
+  .agents/skills/openspec-ff-change/SKILL.md: 4d9252b1eb91a4753e8fcccf92103cc1f748c7257139d800a1dea19e0479acbd
+  openspec/config.yaml: 2a791b0ccc50e2c2ebbb3ba28692a4ad0e4b6ab94ed2151375ac404d7056e89a
+  openspec/specs/.gitkeep: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  openspec/changes/archive/.gitkeep: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  .claude/skills/openspec-propose/SKILL.md: 87b52edf3d512f01a1a04b40693017ff9ec1652e4095e0da97c12d11ad7d39d6
+  .claude/skills/openspec-explore/SKILL.md: 976ce36c72d156dce1dff8e146b3499c8826c48a4a558d4bc7960e2c607edd43
+  .claude/skills/openspec-new-change/SKILL.md: 23e910ea0703e1de1c7d2547e5718f3cef42e32ce52abfe87ee5bb69083ca17b
+  .claude/skills/openspec-continue-change/SKILL.md: 97f0332b31ecf26ba849f1179d25e86cfc87bbef17336285258ec884458f4177
+  .claude/skills/openspec-apply-change/SKILL.md: e335fd01020a856e1f0a532f40ab4ada967f1d8b7181d6ac20591a5fc215d7e0
+  .claude/skills/openspec-update-change/SKILL.md: 54748b469b494273b84dd9a98973b2f6e092033b704e0fc7a80c27d8dbff13ba
+  .claude/skills/openspec-ff-change/SKILL.md: 5ad23067081f4d7bef1f0cd81fb2d49a1a57c490898eac69e1cd919736cafe61
+  .claude/skills/openspec-sync-specs/SKILL.md: e3f411fc1efb263eb101e8d49acfc3b3a2f499595c8a6931f05ccb4cb7ea9713
+  .claude/skills/openspec-archive-change/SKILL.md: 8a8a250936aaddd0c9105fa27e3e536214e0ed0917d9f042349b8bfcc492fe2e
+  .claude/skills/openspec-bulk-archive-change/SKILL.md: e8997e15b4443971a527984441d06a4627baa5ef9d4c3fb78de48a5dd514828d
+  .claude/skills/openspec-verify-change/SKILL.md: 4329fd75d4bc17bbddedc274bf6ff2a3b6ec1842e7512ef074468a502fa5d371
+  .claude/skills/openspec-onboard/SKILL.md: f3b37408f659b8d9bc0124373d409add8d1764a3fe0d0b6f1cfbb33eae352a83
+  .gemini/skills/openspec-propose/SKILL.md: 87b52edf3d512f01a1a04b40693017ff9ec1652e4095e0da97c12d11ad7d39d6
+  .gemini/skills/openspec-explore/SKILL.md: 976ce36c72d156dce1dff8e146b3499c8826c48a4a558d4bc7960e2c607edd43
+  .gemini/skills/openspec-new-change/SKILL.md: 23e910ea0703e1de1c7d2547e5718f3cef42e32ce52abfe87ee5bb69083ca17b
+  .gemini/skills/openspec-continue-change/SKILL.md: 97f0332b31ecf26ba849f1179d25e86cfc87bbef17336285258ec884458f4177
+  .gemini/skills/openspec-apply-change/SKILL.md: e335fd01020a856e1f0a532f40ab4ada967f1d8b7181d6ac20591a5fc215d7e0
+  .gemini/skills/openspec-update-change/SKILL.md: 54748b469b494273b84dd9a98973b2f6e092033b704e0fc7a80c27d8dbff13ba
+  .gemini/skills/openspec-ff-change/SKILL.md: 5ad23067081f4d7bef1f0cd81fb2d49a1a57c490898eac69e1cd919736cafe61
+  .gemini/skills/openspec-sync-specs/SKILL.md: e3f411fc1efb263eb101e8d49acfc3b3a2f499595c8a6931f05ccb4cb7ea9713
+  .gemini/skills/openspec-archive-change/SKILL.md: 8a8a250936aaddd0c9105fa27e3e536214e0ed0917d9f042349b8bfcc492fe2e
+  .gemini/skills/openspec-bulk-archive-change/SKILL.md: e8997e15b4443971a527984441d06a4627baa5ef9d4c3fb78de48a5dd514828d
+  .gemini/skills/openspec-verify-change/SKILL.md: 4329fd75d4bc17bbddedc274bf6ff2a3b6ec1842e7512ef074468a502fa5d371
+  .gemini/skills/openspec-onboard/SKILL.md: f3b37408f659b8d9bc0124373d409add8d1764a3fe0d0b6f1cfbb33eae352a83
+  .grok/skills/openspec-propose/SKILL.md: 87b52edf3d512f01a1a04b40693017ff9ec1652e4095e0da97c12d11ad7d39d6
+  .grok/skills/openspec-explore/SKILL.md: 976ce36c72d156dce1dff8e146b3499c8826c48a4a558d4bc7960e2c607edd43
+  .grok/skills/openspec-new-change/SKILL.md: 23e910ea0703e1de1c7d2547e5718f3cef42e32ce52abfe87ee5bb69083ca17b
+  .grok/skills/openspec-continue-change/SKILL.md: 97f0332b31ecf26ba849f1179d25e86cfc87bbef17336285258ec884458f4177
+  .grok/skills/openspec-apply-change/SKILL.md: e335fd01020a856e1f0a532f40ab4ada967f1d8b7181d6ac20591a5fc215d7e0
+  .grok/skills/openspec-update-change/SKILL.md: 54748b469b494273b84dd9a98973b2f6e092033b704e0fc7a80c27d8dbff13ba
+  .grok/skills/openspec-ff-change/SKILL.md: 5ad23067081f4d7bef1f0cd81fb2d49a1a57c490898eac69e1cd919736cafe61
+  .grok/skills/openspec-sync-specs/SKILL.md: e3f411fc1efb263eb101e8d49acfc3b3a2f499595c8a6931f05ccb4cb7ea9713
+  .grok/skills/openspec-archive-change/SKILL.md: 8a8a250936aaddd0c9105fa27e3e536214e0ed0917d9f042349b8bfcc492fe2e
+  .grok/skills/openspec-bulk-archive-change/SKILL.md: e8997e15b4443971a527984441d06a4627baa5ef9d4c3fb78de48a5dd514828d
+  .grok/skills/openspec-verify-change/SKILL.md: 4329fd75d4bc17bbddedc274bf6ff2a3b6ec1842e7512ef074468a502fa5d371
+  .grok/skills/openspec-onboard/SKILL.md: f3b37408f659b8d9bc0124373d409add8d1764a3fe0d0b6f1cfbb33eae352a83
+  .github/skills/openspec-propose/SKILL.md: 87b52edf3d512f01a1a04b40693017ff9ec1652e4095e0da97c12d11ad7d39d6
+  .github/skills/openspec-explore/SKILL.md: 976ce36c72d156dce1dff8e146b3499c8826c48a4a558d4bc7960e2c607edd43
+  .github/skills/openspec-new-change/SKILL.md: 23e910ea0703e1de1c7d2547e5718f3cef42e32ce52abfe87ee5bb69083ca17b
+  .github/skills/openspec-continue-change/SKILL.md: 97f0332b31ecf26ba849f1179d25e86cfc87bbef17336285258ec884458f4177
+  .github/skills/openspec-apply-change/SKILL.md: e335fd01020a856e1f0a532f40ab4ada967f1d8b7181d6ac20591a5fc215d7e0
+  .github/skills/openspec-update-change/SKILL.md: 54748b469b494273b84dd9a98973b2f6e092033b704e0fc7a80c27d8dbff13ba
+  .github/skills/openspec-ff-change/SKILL.md: 5ad23067081f4d7bef1f0cd81fb2d49a1a57c490898eac69e1cd919736cafe61
+  .github/skills/openspec-sync-specs/SKILL.md: e3f411fc1efb263eb101e8d49acfc3b3a2f499595c8a6931f05ccb4cb7ea9713
+  .github/skills/openspec-archive-change/SKILL.md: 8a8a250936aaddd0c9105fa27e3e536214e0ed0917d9f042349b8bfcc492fe2e
+  .github/skills/openspec-bulk-archive-change/SKILL.md: e8997e15b4443971a527984441d06a4627baa5ef9d4c3fb78de48a5dd514828d
+  .github/skills/openspec-verify-change/SKILL.md: 4329fd75d4bc17bbddedc274bf6ff2a3b6ec1842e7512ef074468a502fa5d371
+  .github/skills/openspec-onboard/SKILL.md: f3b37408f659b8d9bc0124373d409add8d1764a3fe0d0b6f1cfbb33eae352a83
+  .opencode/skills/openspec-propose/SKILL.md: 87b52edf3d512f01a1a04b40693017ff9ec1652e4095e0da97c12d11ad7d39d6
+  .opencode/skills/openspec-explore/SKILL.md: 976ce36c72d156dce1dff8e146b3499c8826c48a4a558d4bc7960e2c607edd43
+  .opencode/skills/openspec-new-change/SKILL.md: 23e910ea0703e1de1c7d2547e5718f3cef42e32ce52abfe87ee5bb69083ca17b
+  .opencode/skills/openspec-continue-change/SKILL.md: 97f0332b31ecf26ba849f1179d25e86cfc87bbef17336285258ec884458f4177
+  .opencode/skills/openspec-apply-change/SKILL.md: e335fd01020a856e1f0a532f40ab4ada967f1d8b7181d6ac20591a5fc215d7e0
+  .opencode/skills/openspec-update-change/SKILL.md: 54748b469b494273b84dd9a98973b2f6e092033b704e0fc7a80c27d8dbff13ba
+  .opencode/skills/openspec-ff-change/SKILL.md: 5ad23067081f4d7bef1f0cd81fb2d49a1a57c490898eac69e1cd919736cafe61
+  .opencode/skills/openspec-sync-specs/SKILL.md: e3f411fc1efb263eb101e8d49acfc3b3a2f499595c8a6931f05ccb4cb7ea9713
+  .opencode/skills/openspec-archive-change/SKILL.md: 8a8a250936aaddd0c9105fa27e3e536214e0ed0917d9f042349b8bfcc492fe2e
+  .opencode/skills/openspec-bulk-archive-change/SKILL.md: e8997e15b4443971a527984441d06a4627baa5ef9d4c3fb78de48a5dd514828d
+  .opencode/skills/openspec-verify-change/SKILL.md: 4329fd75d4bc17bbddedc274bf6ff2a3b6ec1842e7512ef074468a502fa5d371
+  .opencode/skills/openspec-onboard/SKILL.md: f3b37408f659b8d9bc0124373d409add8d1764a3fe0d0b6f1cfbb33eae352a83
+  .sdd/config.yaml: 52636cb91b57b4370dc3bf156573ee7156a866623a3ffc24422f531b40dc3876
+  .sdd/THIRD_PARTY_NOTICES.md: dc5604f887765a042b269dd95fd6a7ea34cede27f18ab5464b80c7a0c1f69d2f
+  AGENTS.md: bf0797e0dc37c546ddcc1b235ebd215222d2178d9045d6584c7f1bf23e5ec421
+  .gitignore: 34c060b86fa013494982eaaee93d24e757388510387fc5f395fc8f6512435178
+  CLAUDE.md: bf0797e0dc37c546ddcc1b235ebd215222d2178d9045d6584c7f1bf23e5ec421
+  GEMINI.md: bf0797e0dc37c546ddcc1b235ebd215222d2178d9045d6584c7f1bf23e5ec421
+  .github/copilot-instructions.md: bf0797e0dc37c546ddcc1b235ebd215222d2178d9045d6584c7f1bf23e5ec421
+sections:
+  AGENTS.md: 83e132e660212e06d79f65a0cd93e6a96e75254d2e63535f197dd1246b3c80f1
+  CLAUDE.md: 83e132e660212e06d79f65a0cd93e6a96e75254d2e63535f197dd1246b3c80f1
+  GEMINI.md: 83e132e660212e06d79f65a0cd93e6a96e75254d2e63535f197dd1246b3c80f1
+  .github/copilot-instructions.md: 83e132e660212e06d79f65a0cd93e6a96e75254d2e63535f197dd1246b3c80f1
+tool_version: 0.1.5
+applied_at: '2026-11-02T21:06:07.733806+00:00'
+harnesses:
+- generic
+- claude
+- codex
+- gemini
+- grok
+- copilot
+- opencode
+versions:
+  openspec: 1.13.1
+  generic:
+    version: null
+    superpowers: not-verifiable
+  claude:
+    version: 2.1.316 (Claude Code)
+    superpowers: verified-by-cli
+  codex:
+    version: codex-cli 0.166.0
+    superpowers: manual-verification-required
+  gemini:
+    version: null
+    superpowers: harness-not-installed
+  grok:
+    version: grok 1.0.70 (f50904eaee6c)
+    superpowers: verified-by-cli
+  copilot:
+    version: 'GitHub Copilot CLI 1.0.83.
+
+      Run ''copilot update'' to check for updates.'
+    superpowers: verified-by-cli
+  opencode:
+    version: null
+    superpowers: harness-not-installed
+workflows:
+- propose
+- explore
+- new
+- continue
+- apply
+- update
+- ff
+- sync
+- archive
+- bulk-archive
+- verify
+- onboard

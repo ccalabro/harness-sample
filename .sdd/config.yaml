@@ -1,0 +1,17 @@
+schema_version: 1
+harnesses:
+- generic
+- claude
+- codex
+- gemini
+- grok
+- copilot
+- opencode
+default_harness: generic
+models:
+  profiles: {}
+  roles: {}
+  candidates: {}
+workflow:
+  max_repairs: 2
+checks: []

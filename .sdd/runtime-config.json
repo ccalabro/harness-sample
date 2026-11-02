@@ -1,0 +1,6 @@
+{
+  "workflow": {
+    "max_repairs": 2
+  },
+  "checks": []
+}
