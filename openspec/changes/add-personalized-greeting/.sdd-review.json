@@ -77,6 +77,23 @@
       "reviewer": "/root/security_review",
       "model": "gpt-6.1-sol",
       "revision": "3c74bcf670f345e49306b80c61131b64f0f10f239e4237605a639ea8cf7b664c"
+    },
+    "final": {
+      "verdict": "PASS",
+      "blockers": [],
+      "advisories": [
+        "The workflow review record is committed in openspec/changes/add-personalized-greeting/.sdd-review.json."
+      ],
+      "evidence": [
+        "greeting.py satisfies all four approved scenarios; tests cover greeting, trimming, and exact blank-name error.",
+        "Test-first commit precedes implementation; task, plan, and security reviews pass at their recorded revisions.",
+        "README covers purpose, setup/use, commit history, and demo limitation without prohibited terms.",
+        "Full suite: 4 passed. Strict OpenSpec validation passed.",
+        "Review record is tracked at current HEAD ea8b5d1."
+      ],
+      "reviewer": "/root/final_review",
+      "model": "gpt-6.1-sol",
+      "revision": "3c74bcf670f345e49306b80c61131b64f0f10f239e4237605a639ea8cf7b664c"
     }
   },
   "tasks": {
@@ -598,6 +615,10 @@
     {
       "at": "2026-11-02T21:17:00.993940+00:00",
       "event": "review:security:PASS"
+    },
+    {
+      "at": "2026-11-02T21:17:28.010318+00:00",
+      "event": "review:final:PASS"
     }
   ],
   "approval": {
