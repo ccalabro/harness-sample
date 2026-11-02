@@ -37,8 +37,10 @@ prepare the exact title/body and dispatch the generated `sdd-pr-reviewer` agent
 in a fresh read-only session immediately before creating the request. Give it
 the complete branch diff against the base branch, approved OpenSpec criteria
 and archived artifacts, check/CI results, earlier review evidence, proposed
-request text, and fixed head/base SHAs. Resolve its `deep-review` model with
-`the model assignments in .sdd/config.yaml` and verify the actual model used. Require a different actual
+request text, and fixed head/base SHAs. Resolve model bindings from the `models`
+section of `.sdd/config.yaml` (`profiles`, `roles`, `candidates`); if empty, use
+the harness default and record it. Verify the actual model used. Require a
+different actual
 model from every implementer, a distinct reviewer session, and evidence from
 provider model documentation or an explicit operator mapping that it has a
 deeper reasoning tier. Different IDs alone do not establish a different model

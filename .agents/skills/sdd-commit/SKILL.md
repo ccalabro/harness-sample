@@ -11,7 +11,7 @@ Create only the local commit requested by the user. Skill availability and
 ## Inputs and stop conditions
 
 Read `.sdd/POLICY.md`, the explicit request, workflow completion evidence,
-archived OpenSpec artifacts, and the intended file list. Inspect generated project workflow script status
+archived OpenSpec artifacts, and the intended file list. Inspect workflow status
 before archive or its retained completion evidence afterward. Stop if required
 gates are incomplete/stale or intended changes cannot be distinguished from
 unrelated edits. A local commit does not authorize push or review-request creation.

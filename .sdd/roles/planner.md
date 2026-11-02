@@ -5,7 +5,7 @@ This is harness-neutral instruction, not an executable agent definition. For sup
 ## Inputs
 Confirm the current exact specification revision has human approval.
 Read the approved proposal and delta specs, existing architecture and
-tests, and current generated project workflow script status.
+tests, and the output of `python .sdd/scripts/sdd-workflow.py status CHANGE`.
 
 ## Work and output
 Invoke Superpowers writing-plans as input to openspec-continue-change for

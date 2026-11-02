@@ -2,10 +2,10 @@ schema_version: 1
 files:
   .sdd/POLICY.md: a1f59f35dfc3c4765c55df1830b1f4e4183077c4c8868d1349250478a5d94d10
   .sdd/scripts/sdd-doctor.py: 3da4a77f46cf759932ea409a2284551fe0428911c6fe82fd6476b1cc07a55114
-  .sdd/scripts/sdd-workflow.py: 9145b14a09c05bc61688ed1e695dea4a9564dd4e5f9dfa113cb2d88a4819ce10
+  .sdd/scripts/sdd-workflow.py: 377e58abc1f307c886fe116bddc63beb8ed6b873f45411b98297ab28c95c8863
   .sdd/scripts/sdd_workflow_runtime.py: 3c463dd1d6e01d8c467f426b178d253ac0ee0f8cf479c9ca09f2cf05b0e1c5b8
   .sdd/runtime-config.json: 53859e745c143dcc7b160da595ae0bdf494083b1bedc766bc15e539ced3347b0
-  .agents/skills/sdd-run/SKILL.md: 7932dc9ac9f8b4d541769f7b1e3fbc93bd7942fc64b6e0dde8d9dde5212301bb
+  .agents/skills/sdd-run/SKILL.md: 4c413ea982a478a9ddf37ac749e9faaacdf20bd713f5e20d86ea57266913e44a
   .agents/skills/sdd-test-strategy/SKILL.md: 6ddebc8e70b57e54f00762b50351bfcc5f975ca8bddcd72e241b334ae0569d1e
   .agents/skills/sdd-threat-model/SKILL.md: 7f01d4d2e5833856f61ad9f44c8aef2bbc870b2da297146b712645b13212c263
   .agents/skills/sdd-api-contract-review/SKILL.md: 11e3b807f211cd95f24bf201bd7a728ea96268fade46e706b1efd6945b0c83d8
@@ -13,22 +13,22 @@ files:
   .agents/skills/sdd-accessibility-review/SKILL.md: 8bb862f4e1a5937d651f9b3d9b87d784118357b6ed8f9aa9c406ef4f2f583b62
   .agents/skills/sdd-observability-review/SKILL.md: 24237fb7cae7d816500690e9351f3886ee5710c42edb7fa9a3e5b7159afe9ac4
   .agents/skills/sdd-release-readiness/SKILL.md: a87527b0c655a9bb40efe6279e3e7d141894ed36f1378b88205270b93d43fa6a
-  .agents/skills/sdd-commit/SKILL.md: da6c1a994cf282a4173c471c40fcddb91136bb2c226f5501cf69538259f3d882
-  .agents/skills/sdd-github-pr/SKILL.md: 4ce6134e9def54e00df51b431ee2a69126dbfe7a46c0faec219badbb04dbfeb9
-  .agents/skills/sdd-gitlab-mr/SKILL.md: 315fad6fe47a782a72513d140c5cad99f6bc239586d416a5e74a42693b460114
-  .agents/skills/sdd-bitbucket-pr/SKILL.md: f2f2e83d5e7cd4482912a1ed27c7e8de56802a7feda30f12799ddfb9ae43685d
+  .agents/skills/sdd-commit/SKILL.md: 75663276b81ae4e7cd0f7b150e9dde73da1d917047f7ff93f069b9691daf0a30
+  .agents/skills/sdd-github-pr/SKILL.md: a4ecab101d77bd4e56bf2cbdc2f59963cba2bde551824e045d2570f2ad22f9a6
+  .agents/skills/sdd-gitlab-mr/SKILL.md: 9da61e94c2eb04297ecbfa090cee04563a8317fcd6a1ae275b5dd9077acac1fd
+  .agents/skills/sdd-bitbucket-pr/SKILL.md: 96b61935c66ef8148ce708dd265536eb676b2ad7b4e191ce06f979ec16c317bf
   .sdd/roles/explorer.md: e2097e03ddd9bc797d5ff64acf4960bd9a0ad4293f6ae31b57ae55c86fefebd8
   .sdd/roles/brainstormer.md: 50f0fb24608eaa1cdae21c11a462e234490c022435eda2f3986f6fb2f6356da8
-  .sdd/roles/specifier.md: a32517162c37e05300f323b88135edd835568c21aa092d03442293eba9dce5ca
-  .sdd/roles/planner.md: 660b6984f8f74a8ac88f17a7f6476ce64ccc63f27bffbb817f95f82fe7997905
+  .sdd/roles/specifier.md: 86f42515c3270d8b996f94b06d406806cd7f07ea45d0f1484eb5a17c6ddfa13b
+  .sdd/roles/planner.md: 0183d5d4482c4339f57e0f1e9c5a494d08bbb50276d1e9a16af3756d5fbf37b6
   .sdd/roles/plan-reviewer.md: 197d2eeee4e1a35464ae2f7314cc71cffa560c8deef864abdbb59d4447fcf6da
-  .sdd/roles/implementer.md: d76cc67a0d78e9b6b08c64fa68d2cde3e0497512ff5c1369b2ce9d1a856b12e2
+  .sdd/roles/implementer.md: 17244357ab82d36ee573b0770935a43969ab8ccd3b2c82ff2dd0e6ebf39942b4
   .sdd/roles/spec-reviewer.md: 0d7bf1ba373a8e7b9f35f0b06b44f61166b3c633576415a613dbbc8ba782f48e
   .sdd/roles/code-reviewer.md: 54027d63de95286d5a767109faea7f0aab832c1dc7dd46bddb950ea597b57c12
   .sdd/roles/security-reviewer.md: bcb4feb15d2bca6b61c077027d3931ac2d414d453306981779cc6a96e0f35f6b
   .sdd/roles/final-reviewer.md: 49f4692bab1a7817da86f4a559a5169af2f9dca09a2898d1b64cb8bfcfeaca32
   .sdd/roles/pr-reviewer.md: 030b7e9eff68969b58f753d8827549eb2df87cc8509093a45c241b268c6542fc
-  .sdd/harnesses/generic.md: 0533a16854bc406278f1f998d03a6beb8d842805865edde129de4150859d9208
+  .sdd/harnesses/generic.md: 3edb900c06c147ee017d4c02f7829b492367ef7cb9a6c1ef3cf2f74bd6c790b9
   .claude/skills/sdd-run/SKILL.md: 5bfc7be5b2acec3a472e05eb8c9c91ec748a2b48d4bf8af8335c69e906d611e0
   .claude/skills/sdd-test-strategy/SKILL.md: acb6eafe392dfd2e07ae940f8b02fe608755065642deb9868c69ec6188daa20e
   .claude/skills/sdd-threat-model/SKILL.md: fef3812e2bb14ef1611d6d95b55c3ee9d4a9a79f302363b6dbb31ee60adc353a
@@ -229,7 +229,7 @@ files:
   .sdd/config.yaml: 52636cb91b57b4370dc3bf156573ee7156a866623a3ffc24422f531b40dc3876
   .sdd/THIRD_PARTY_NOTICES.md: dc5604f887765a042b269dd95fd6a7ea34cede27f18ab5464b80c7a0c1f69d2f
   AGENTS.md: bf0797e0dc37c546ddcc1b235ebd215222d2178d9045d6584c7f1bf23e5ec421
-  .gitignore: 34c060b86fa013494982eaaee93d24e757388510387fc5f395fc8f6512435178
+  .gitignore: a831d53e3a1e4cdf96d82634f22d189b9cc4a3a7bde42ee574292fbb4913f0c6
   CLAUDE.md: bf0797e0dc37c546ddcc1b235ebd215222d2178d9045d6584c7f1bf23e5ec421
   GEMINI.md: bf0797e0dc37c546ddcc1b235ebd215222d2178d9045d6584c7f1bf23e5ec421
   .github/copilot-instructions.md: bf0797e0dc37c546ddcc1b235ebd215222d2178d9045d6584c7f1bf23e5ec421
@@ -239,7 +239,7 @@ sections:
   GEMINI.md: 83e132e660212e06d79f65a0cd93e6a96e75254d2e63535f197dd1246b3c80f1
   .github/copilot-instructions.md: 83e132e660212e06d79f65a0cd93e6a96e75254d2e63535f197dd1246b3c80f1
 tool_version: 0.1.5
-applied_at: '2026-11-02T21:06:07.733806+00:00'
+applied_at: '2026-11-02T22:20:23.283128+00:00'
 harnesses:
 - generic
 - claude

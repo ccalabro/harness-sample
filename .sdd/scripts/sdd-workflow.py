@@ -296,7 +296,7 @@ def begin_task(root: Path, change: str, task_id: str, implementer: str) -> None:
     with repo_lock(root):
         current = status(root, change)
         if current.phase != "implementation" or current.task != task_id:
-            raise SDDError("This task is not eligible; inspect generated project workflow script status")
+            raise SDDError("This task is not eligible; inspect workflow status")
         if not implementer.strip():
             raise SDDError("Provide the implementer session ID")
         data = records(root, change)

@@ -4,7 +4,8 @@ This is harness-neutral instruction, not an executable agent definition. For sup
 
 ## Inputs
 Read the user's request, optional brainstorming decisions, repository
-context, OpenSpec instructions, and current generated project workflow script status.
+context, OpenSpec instructions, and the output of
+`python .sdd/scripts/sdd-workflow.py status CHANGE`.
 
 ## Work and output
 Invoke openspec-new-change and openspec-continue-change stepwise, using

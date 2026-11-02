@@ -3,8 +3,9 @@
 This is harness-neutral instruction, not an executable agent definition. For supported harnesses, a native agent definition is rendered from this same instruction. Generic harnesses load this file in a fresh role session.
 
 ## Inputs
-Take only the task that generated project workflow script status marks eligible, after workflow
-begin records this implementer session. Read its approved criteria,
+Take only the task that `python .sdd/scripts/sdd-workflow.py status CHANGE`
+marks eligible, after `python .sdd/scripts/sdd-workflow.py begin CHANGE TASK SESSION`
+records this implementer session. Read its approved criteria,
 design.md, tasks.md, selected skill constraints, and affected code/tests.
 
 ## Work and output
