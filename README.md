@@ -65,3 +65,7 @@ MIT. See `LICENSE`.
 ## Contact
 
 Cristian Calabro · [ccalabro.dev](https://www.ccalabro.dev) · [cristian@ccalabro.dev](mailto:cristian@ccalabro.dev)
+
+## Running agents remotely
+
+Plans and builds can run headlessly on a dedicated machine. The resulting changes can be opened as draft pull requests for human review.
